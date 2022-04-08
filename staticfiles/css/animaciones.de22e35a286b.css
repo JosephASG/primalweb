@@ -1,0 +1,69 @@
+.containerLogo{
+    width: 100px;
+    height: 100px;
+    background: darkblue;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.logoPrimal{
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+    animation: logoPri 5s infinite;
+}
+
+.containerText{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.textoW2{
+    display: inline;
+    white-space: nowrap;
+    border-right: 4px solid;
+
+    animation: blink 0.5s infinite step-end alternate;
+}
+
+
+.textoW{
+    display: flex;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 24ch;
+    font-size: 3.7rem;
+
+    animation: typing 2s infinite alternate steps(24);
+    overflow: hidden;
+}
+
+@keyframes logoPri{
+    0%{
+        transform: translateY(-25px);
+    }
+    30%{
+        transform: translateY(0) rotate(5deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}

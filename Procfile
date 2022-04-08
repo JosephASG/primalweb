@@ -1,0 +1,1 @@
+web: gunicorn primalweb.wsgi --log-file -

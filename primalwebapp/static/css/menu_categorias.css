@@ -1,0 +1,10 @@
+.menu_links .linkM {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 50px);
+    padding: 15px 0px;
+    border-bottom: 3px solid #000;
+}
