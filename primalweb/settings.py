@@ -146,5 +146,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 mimetypes.add_type("application/javascript", ".js", True)
 
 DEBUG_TOOLBAR_CONFIG = {
-        'INTERCEPT_REDIRECTS': False,
+    'INTERCEPT_REDIRECTS': False,
 }
