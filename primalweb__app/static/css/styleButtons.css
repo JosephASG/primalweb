@@ -95,6 +95,7 @@ containerDescargas{
 }
 
 .botonapps{
+
     text-align:center;
     text-transform:uppercase;
     background-color:transparent;
@@ -114,16 +115,27 @@ containerDescargas{
 }
 .botonapps span{
     background:#ff8282;
-    background:-moz-linear-gradient(left,rgba(255,130,130,1) 0,rgba(225,120,237,1) 100%);
-    background:-webkit-linear-gradient(left,rgba(255,130,130,1) 0,rgba(225,120,237,1) 100%);
-    background:linear-gradient(to right,rgba(255,130,130,1) 0,rgba(225,120,237,1) 100%);
+    background:-moz-linear-gradient(right,#2c3e50, #bdc3c7 100%);
+    background:-webkit-linear-gradient(right,#2c3e50, #bdc3c7 100%);
+    background:linear-gradient(to left, #2c3e50, #bdc3c7 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent
 }
+
+
+
 .boton:hover svg rect{stroke-width:4;stroke-dasharray:196,543;stroke-dashoffset:437}
 
-.boton{text-align:center;text-transform:uppercase;background-color:transparent;cursor:pointer;text-decoration:none;font-family:Roboto,sans-serif;font-weight:900;font-size:17px;letter-spacing:.045em}
+.boton{text-align:center;
+    text-transform:uppercase;
+    background-color:transparent;
+    cursor:pointer;
+    text-decoration:none;
+    font-family:Roboto,sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing:.045em}
 .boton svg rect{
     stroke:#EC0033;
     stroke-width:4;
@@ -133,10 +145,10 @@ containerDescargas{
     transition:all 600ms ease}
 
 .boton span{
-    background:#000000;
-    background:-moz-linear-gradient(left,#6f0000,#200122 100%);
-    background:-webkit-linear-gradient(left,#6f0000,#200122 100%);
-    background:linear-gradient(to right,#6f0000,#200122 100%);
+    background:#ff8282;
+    background:-moz-linear-gradient(right,#000000, #D31027 100%);
+    background:-webkit-linear-gradient(right, #000000, #D31027 100%);
+    background:linear-gradient(to left, #000000, #D31027 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent}
@@ -149,8 +161,19 @@ containerDescargas{
 .button.type1.type1::after{bottom:0;right:0;border-color:transparent #566473 #566473 transparent}
 .button.type1.type1::before{top:0;left:0;border-color:#566473 transparent transparent #566473}
 .button.type1.type1:hover:after,.button.type1.type1:hover:before{width:100%;height:100%}
-.button.type2{color:#16a085}
-.button.type2.type2:after,.button.type2.type2:before{content:"";display:block;position:absolute;top:100%;left:0;width:100%;height:2px;background-color:#16a085;transition:all .3s ease;transform:scale(0.85)}
+.button.type2{color:#EA384D}
+.button.type2.type2:after,.button.type2.type2:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:100%;left:0;
+    width:100%;
+    height:2px;
+    background:-moz-linear-gradient(right,#000000, #D31027 100%);
+    background:-webkit-linear-gradient(right, #000000, #D31027 100%);
+    background:linear-gradient(to left, #000000, #D31027 100%);
+    transition:all .3s ease;
+    transform:scale(0.85)}
 .button.type2.type2:hover:before{top:0;transform:scale(1)}
 .button.type2.type2:hover:after{transform:scale(1)}
 .button.type3{color:#435a6b}

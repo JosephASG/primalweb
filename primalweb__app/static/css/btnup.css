@@ -1,7 +1,11 @@
 .go__top__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    top: 85%;
+    left: 50%;
     width: 6.6rem;
     height: 6.6rem;
     z-index: -1;
@@ -43,7 +47,7 @@
     animation: popup .3 ease-in-out;
     width: 6.6rem;
     height: 6.6rem;
-    z-index: 11;
+    z-index: 10;
 }
 
 .show i{
@@ -88,6 +92,7 @@
 
 @media screen and (max-width:992px) {
     .go__top__container{        
-        transform: translateX(-40%) scale(0.7);
+        width: 6.6rem;
+        height: 6.6rem;
     }
 }
