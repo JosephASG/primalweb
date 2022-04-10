@@ -59,10 +59,10 @@
 
 @keyframes logoPri{
     0%{
-        transform: translateX(-320px);      
+        transform: translateX(-290px);      
     }
     30%{
-        transform: translateX(320px) rotate(10deg);
+        transform: translateX(290px) rotate(10deg);
     }
     50%{
         transform: rotate(-10deg);
@@ -71,7 +71,7 @@
         transform: rotate(10deg);
     }
     100%{
-        transform: translateX(-320px);
+        transform: translateX(-290px);
         
     }
 }
@@ -95,7 +95,7 @@
     }
 }
 
-@media screen and (max-width: 335px){
+@media screen and (max-width: 650px){
     .logoPrimal{
         animation: logoPrim 5s infinite;
     }
