@@ -259,5 +259,19 @@
         });
     </script>
 
+    <script>
+       window.onscroll = function(){
+    var position = window.pageYOffset || document.documentElement.scrollTop;
+
+    var elemento_1 = document.getElementById("element_uno");
+    var elemento_2 = document.getElementById("element_dos");
+    var elemento_3 = document.getElementById("element_tres");
+    
+    elemento_1.style.bottom = position * 0.1+ "px";
+    elemento_2.style.top = position * 0.2 + "px";
+    elemento_3.style.bottom = position * 0.1+ "px";
+       }
+   </script>
+
     </body>
 </html>
