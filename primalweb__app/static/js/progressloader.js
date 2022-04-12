@@ -1,4 +1,4 @@
 var contenedor = document.querySelector('#preloaderbar');
 setTimeout(function(){
-    contenedor.classList.add('endprogress');
+    contenedor.classList.toggle('endprogress');
 }, 1000)

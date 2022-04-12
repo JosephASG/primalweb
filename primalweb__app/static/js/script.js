@@ -1,4 +1,4 @@
-document.querySelector(".bar__menu").addEventListener("click", animatedBars);
+/*document.querySelector(".bar__menu").addEventListener("click", animatedBars);
 
 var line1__bars = document.querySelector(".line1__bars-menu");
 var line2__bars = document.querySelector(".line2__bars-menu");
@@ -11,4 +11,5 @@ function animatedBars(){
     line3__bars.classList.toggle("activeline3__bars-menu");
 
     navbar_color.classList.toggle("navb");
-}
+}*/
+

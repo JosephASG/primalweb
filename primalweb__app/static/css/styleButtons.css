@@ -75,11 +75,11 @@ button:focus,button:hover{border-color:var(--hover);
     min-height:100vh;
     display:flex}*/
 
-button{background:0 0;
+/*button{background:0 0;
     border:2px solid;
     font:inherit;line-height:1;
     margin:.5em;
-    padding:1em 2em}
+    padding:1em 2em}*/
 
 h1{font-weight:400}
 
@@ -125,9 +125,10 @@ containerDescargas{
 
 
 
+
 .boton:hover svg rect{stroke-width:4;stroke-dasharray:196,543;stroke-dashoffset:437}
 
-.boton{text-align:center;
+/*.boton{text-align:center;
     text-transform:uppercase;
     background-color:transparent;
     cursor:pointer;
@@ -135,7 +136,7 @@ containerDescargas{
     font-family:Roboto,sans-serif;
     font-weight:900;
     font-size:17px;
-    letter-spacing:.045em}
+    letter-spacing:.045em}*/
 .boton svg rect{
     stroke:#EC0033;
     stroke-width:4;
@@ -146,9 +147,9 @@ containerDescargas{
 
 .boton span{
     background:#ff8282;
-    background:-moz-linear-gradient(right,#000000, #D31027 100%);
-    background:-webkit-linear-gradient(right, #000000, #D31027 100%);
-    background:linear-gradient(to left, #000000, #D31027 100%);
+    background:-moz-linear-gradient(right,#ff0029, #D31027 100%);
+    background:-webkit-linear-gradient(right, #ff0029, #D31027 100%);
+    background:linear-gradient(to left, #ff0029, #D31027 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent}
@@ -161,6 +162,7 @@ containerDescargas{
 .button.type1.type1::after{bottom:0;right:0;border-color:transparent #566473 #566473 transparent}
 .button.type1.type1::before{top:0;left:0;border-color:#566473 transparent transparent #566473}
 .button.type1.type1:hover:after,.button.type1.type1:hover:before{width:100%;height:100%}
+
 .button.type2{color:#EA384D}
 .button.type2.type2:after,.button.type2.type2:before{
     content:"";
@@ -169,13 +171,14 @@ containerDescargas{
     top:100%;left:0;
     width:100%;
     height:2px;
-    background:-moz-linear-gradient(right,#000000, #D31027 100%);
-    background:-webkit-linear-gradient(right, #000000, #D31027 100%);
-    background:linear-gradient(to left, #000000, #D31027 100%);
+    background:-moz-linear-gradient(right,#ff0029, #D31027 100%);
+    background:-webkit-linear-gradient(right, #ff0029, #D31027 100%);
+    background:linear-gradient(to left, #ff0029, #D31027 100%);
     transition:all .3s ease;
     transform:scale(0.85)}
 .button.type2.type2:hover:before{top:0;transform:scale(1)}
 .button.type2.type2:hover:after{transform:scale(1)}
+
 .button.type3{color:#435a6b}
 .button.type3.type3::after,.button.type3.type3::before{content:"";display:block;position:absolute;width:20%;height:20%;border:2px solid;transition:all .6s ease;border-radius:2px}
 .button.type3.type3::after{bottom:0;right:0;border-color:transparent #435a6b #435a6b transparent}
