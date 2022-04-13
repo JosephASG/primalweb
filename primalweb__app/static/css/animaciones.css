@@ -1324,7 +1324,6 @@ i.selected{
 
 .footer__contacts{
     width: 100%;
-    margin: 0 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1342,7 +1341,7 @@ i.selected{
     text-align: center;
     line-height: 80px;
     font-size: 35px;
-    margin: 10px 35px;
+    margin: 20px 35px;
     display: block;
     border-radius: 50%;
     position: relative;
