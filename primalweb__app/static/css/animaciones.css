@@ -93,7 +93,7 @@
 
 
 
-@media (max-width:992px){
+/*@media (max-width:992px){
     .containerText.scrolled{     
         background: none;
     }
@@ -132,7 +132,7 @@
     .bar__menu{
         transform: translateX(-20px);
     }
-}
+}*/
 
 
 .container__cards{
@@ -220,7 +220,7 @@
 
 
 /*---------------index cards-----------------------------*/
-.container__cardsI{
+/*.container__cardsI{
     width: 100%;
     margin: auto;
     display: flex;
@@ -262,23 +262,11 @@
 }
 
 .cover__cardI img{
-    /*cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background:-moz-linear-gradient(right,#000000, #D31027 100%);
-    background:-webkit-linear-gradient(right, #000000, #D31027 100%);
-    background:linear-gradient(to left, #000000, #D31027 100%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    color: #ff0029;
-    font-size: 10rem;*/
     width: auto;
     height: 100%;
     margin-left: 37px;
     transition: all 300ms;
-}
+}*/
 
 /*---------------------------------------------------------------- menu ---------------------------------------*/
 
@@ -988,8 +976,9 @@ i.selected{
 }
 
 .letras__primal__s{
+    font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, .5);
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     justify-content: center;
@@ -999,13 +988,45 @@ i.selected{
 }
 
 /*--------------------------------------------nuevo navbar----------------------------------------*/
+/*.activeline1__bars-menu{
+    transform: rotate(40deg) translateX(6px) translateY(-5px) translateX(-5px); 
+}
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translateX(-2px) translateY(5px) translateX(5px);
 
+}
+.bar__menu span{
+    margin-bottom: 6px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: white;
+    transform-origin: 0px 100%;
+    margin-top: 6px;
+    transition: all 600ms;
+}*/
+.toggle__ {
+    
+    cursor: pointer;
+    outline: none;
+}
 .toggle__{
     position: fixed;
     top: 10px;
     right: 30px;
     width: 50px;
     height: 50px;
+    /*display: block;
+    margin-bottom: 6px;
+    width: 30px;
+    height: 2px;
+    background: white;
+    transform-origin: 0px 100%;
+    transition: all 600ms;*/
     background: url("https://res.cloudinary.com/primalappsje/image/upload/v1649748390/primal/menu_tbc8b0.png");
     background-size: 30px;
     background-position: center;
@@ -1037,10 +1058,12 @@ i.selected{
     padding: 40px;
     z-index: 4;
     right: -100%;
+    transition: all 1000ms ease-in-out;
 }
 
 .sidebar__.active{
     right: 0;
+    transition: all 1000ms ease;
 }
 
 .sidebar__ ul{
@@ -1183,7 +1206,7 @@ i.selected{
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;   
-    z-index: 12; 
+    z-index: 6; 
 }
 
 .toggle__skills.active{
@@ -1193,7 +1216,7 @@ i.selected{
     background-repeat: no-repeat;
     cursor: pointer; 
     transition: all 700ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    z-index: 12; 
+    z-index: 6; 
 }
 
 .skills_container_card{
@@ -1211,8 +1234,8 @@ i.selected{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    transition: all 700ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    z-index: 11; 
+    transition: all 1000ms ease-in-out;
+    z-index: 6; 
     top: -100%;
 }
 
@@ -1222,7 +1245,7 @@ i.selected{
 
 .skills_container_card.active{
     top:10px;
-    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 2000ms ease;
     z-index: 3; 
 }
 
@@ -1254,7 +1277,7 @@ i.selected{
     text-decoration: none;
     font-size: 2.5em;
     color: transparent;
-    -webkit-text-stroke: 2px black; 
+    -webkit-text-stroke: 2px white; 
 }
 .__card__skils{
     font-family: 'Poppins', sans-serif;
@@ -1262,7 +1285,7 @@ i.selected{
     margin: 10px;
     padding: 5px;
     transform: rotateX(0deg) scale(1) translate(0, 0);
-    transition: 700ms;
+    transition: 300ms;
 }
 .__card__skils__x{
     font-family: 'Poppins', sans-serif;

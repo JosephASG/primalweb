@@ -142,7 +142,12 @@
 <!------------------------------------------------------------Menu seleccion--------------------------------------------------------------------->     
 
     <section onclick="toggleMenu__();">
-        <div class="toggle__ "></div>
+        <div class="toggle__ ">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+        
     
     <div class="sidebar__">
         <ul class="sidebar__menu">
@@ -258,7 +263,7 @@
         </div>
 <!--------------------------------------------------------Navbar ------------------------------------------------------------------------->
     
-        <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top navColor" style="z-index: 2;"> 
+        <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top" style="z-index: 2;"> 
             <div class="container px-4">
                 <a class="navbar-brand" href="{% url 'home' %}">
                     <div class="col-sm-6">
