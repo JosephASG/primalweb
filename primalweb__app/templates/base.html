@@ -60,7 +60,8 @@
 </head>
 
 <body id="body" class="__body" >
-    
+<!------------------------------------------------------------Menu seleccion--------------------------------------------------------------------->     
+
     <section onclick="toggleMenu__();">
         <div class="toggle__ "></div>
     
@@ -72,12 +73,17 @@
                 </a>
             </li>
             <li style="--clr:#ff0019">
+                <a data-text="&nbsp;skills" class="btn_open_skills" onclick="toggleMenu__skills();">
+                    &nbsp;Skills&nbsp;
+                </a>
+            </li>
+            <li style="--clr:#ff0009">
                 <a data-text="&nbsp;descargas"  href="{% url 'descargas' %}">
                     &nbsp;Descargas&nbsp;
                 </a>
             </li>
             <li style="--clr:#dd1818">
-                <a data-text="&nbsp;categorias"  id="btn_open">
+                <a data-text="&nbsp;categorias"  id="btn_open" style="cursor: pointer;">
                     &nbsp;Categorias&nbsp;
                 </a>
             </li>
@@ -92,9 +98,11 @@
                 </a>
             </li>
         </ul>
-    </section>
     </div>
-        
+    </section>
+    
+<!------------------------------------------------------------Pantalla de carga de inicio--------------------------------------------------------------------->     
+
         <div class="loader-wrapper">
         <div class="loader2" style="border-top-color: rgba(149, 144, 144, 0.46);"></div>
         
@@ -107,7 +115,26 @@
         
       </div>-->
 
-      
+<!------------------------------------------------------------Tarjeta de habilidades--------------------------------------------------------------------->     
+
+    <section > 
+        <div class="skills_container_card" id="skills_container_menu">
+            <div class="toggle__skills __card__skils__x" onclick="toggleMenu__skills();"></div> 
+
+                <ul class="">
+                    <li class="__card__skils"> <a href="">Python</a> </li>
+                    <li class="__card__skils"><a href="">C#</a></li>
+                    <li class="__card__skils"><a href="">C++</a></li>
+                    <li class="__card__skils"><a href="">Html</a></li>
+                    <li class="__card__skils"><a href="">Css</a></li>
+                    <li class="__card__skils"><a href="">JS</a></li>
+                    <li class="__card__skils"><a href="">React</a></li>
+                    <li class="__card__skils"><a href="">Java</a></li>
+                </ul>
+        </div>
+    </section>
+
+<!------------------------------------------------------------Menu categorias--------------------------------------------------------------------->     
 
         <div class="menu__side" id="menu_side">
             <div class="burger__menu" id="btn_open_i">
@@ -144,7 +171,7 @@
                 </a>
             </div>
         </div>
-      
+<!--------------------------------------------------------Navbar ------------------------------------------------------------------------->
     
         <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top navColor" style="z-index: 2;"> 
             <div class="container px-4">
@@ -232,38 +259,38 @@
             <div class="py-5">
                 <img src="{% static 'img/LogoToAnimateWhite.png' %}" alt="" class="logoPrimal">
             </div>
-            <div class="container__cards__footer">
-                <div class="__card__footer">
-                    <a class="cover__card__footer">
+            <div class="footer__contacts">
+                <div class="footer__contacts__d">
+                    <a class="">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                 </div>
-                <div class="__card__footer">
-                    <a class="cover__card__footer">
+                <div class="footer__contacts__d">
+                    <a class="">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
-                <div class="__card__footer">
-                    <a class="cover__card__footer">
+                <div class="footer__contacts__d">
+                    <a class="">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
-                <div class="__card__footer">
-                    <a class="cover__card__footer">
+                <div class="footer__contacts__d">
+                    <a class="">
                     <i class="fa-brands fa-reddit"></i>
                     </a>
                 </div>
-                <div class="__card__footer">
-                    <a class="cover__card__footer">
+                <div class="footer__contacts__d">
+                    <a class="">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
             </div>    
             <nav id="nav__footer" class="container border-bottom py-3 mb-3">   
                 <a href="#">Home</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
-                <a href="#">Acerca de</a>
+                <a onclick="toggleMenu__skills();">Skills</a>
+                <a>Contacto</a>
+                <a>Acerca de</a>
             </nav>
             <div>
                 <div class="container">
@@ -357,7 +384,7 @@
 
         // SMOOTH SCROLLING
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
@@ -365,7 +392,7 @@
                     behavior: 'smooth'
                 });
             });
-        });
+        });*/
     </script>
 
     <script type="text/javascript">
@@ -398,6 +425,16 @@
             const sidebar__ = document.querySelector(".sidebar__");
             menutoggle.classList.toggle("active")
             sidebar__.classList.toggle("active")
+        }
+    </script>
+    <script>
+        function toggleMenu__skills(){
+            const menutoggle = document.querySelector(".toggle__skills");
+            const skills_container_card = document.querySelector(".skills_container_card");
+            const btn_open_skills = document.querySelector(".btn_open_skills");
+            btn_open_skills.classList.toggle("active")
+            menutoggle.classList.toggle("active")
+            skills_container_card.classList.toggle("active")
         }
     </script>
 

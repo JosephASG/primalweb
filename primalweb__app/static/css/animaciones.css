@@ -322,6 +322,7 @@
 }
 
 .header__menu{
+    color: #000000;
     padding: 40px 30px;
     display: flex;
     align-items: center;
@@ -329,6 +330,7 @@
 }
 
 .header__menu i{
+    color: #000000;
     width: 20px;
     margin-right: 20px;   
 }
@@ -418,6 +420,7 @@ i.selected{
 
 
 .burger__menu{
+    color: #000000;
     padding-top: 30px;
     display: flex;
     align-items: center;
@@ -434,7 +437,7 @@ i.selected{
 
 /*---------------footer cards-----------------------------*/
 
-.container__cards__footer{
+/*.container__cards__footer{
     width: 100%;
     margin: auto;
     display: flex;
@@ -498,7 +501,7 @@ i.selected{
 }
 .container__cards__footer .__card__footer:hover::before{
     transform: skewX(45deg) translateX(-150px);
-}
+}*/
 
 
 /*--------------------------------------------------parallax effect--------------------------------------*/
@@ -1008,7 +1011,7 @@ i.selected{
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;   
-    z-index: 4; 
+    z-index: 5; 
 }
 
 .toggle__.active{
@@ -1017,7 +1020,7 @@ i.selected{
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;   
-    z-index: 4; 
+    z-index: 5; 
 }
 
 .sidebar__{
@@ -1032,7 +1035,7 @@ i.selected{
     align-items: center;
     transition: 0.5s;
     padding: 40px;
-    z-index: 3;
+    z-index: 4;
     right: -100%;
 }
 
@@ -1166,4 +1169,232 @@ i.selected{
     100%{
         top: -90px;
     }
+}
+/*---------------------------------------------- tarjeta de conocimientos ------------------------------------*/
+
+.toggle__skills{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 50px;
+    background: url("https://res.cloudinary.com/primalappsje/image/upload/v1649748390/primal/close_qx9tgy.png");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;   
+    z-index: 1; 
+}
+
+.toggle__skills.active{
+    background: url("https://res.cloudinary.com/primalappsje/image/upload/v1649748390/primal/close_qx9tgy.png");
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer; 
+    transition: all 700ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 4; 
+}
+
+.skills_container_card{
+    position: fixed;
+    width: 60%;
+    height: auto;
+    top: 0;
+    left: 20%;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 700ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1; 
+    top: -100%;
+}
+
+.btn_open_skills{
+    cursor: pointer;
+}
+
+.skills_container_card.active{
+    top:10px;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 3; 
+}
+
+
+.skills_container_card ul{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_container_card ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.skills_container_card ul li a{
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: transparent;
+    -webkit-text-stroke: 2px black; 
+}
+.__card__skils{
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    transform: rotateX(0deg) scale(1) translate(0, 0);
+    transition: 700ms;
+}
+.__card__skils__x{
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+}
+.__card__skils:hover{
+    transform: scale(1) translate(0, -20%);
+    box-shadow: 0 20px 0 rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 700ms;
+}
+
+
+.__cardI:hover .cover__cardI img{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 955px){
+    .__card__skils{
+        margin: 7.5px;
+        padding: 5;
+    }
+    .skills_container_card ul li a{
+        font-size: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 938px){
+    /*.skills_container_card ul{
+        margin-top: 15%;
+    }*/
+    .__card__skils{
+        padding: 1px;
+    }
+    .skills_container_card{
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .skills_container_card{
+        left: 5%;
+        width: 90%;
+        height: 95%;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*body {
+    margin: 0;
+    padding:0;
+    background: #262626;
+  }*/
+
+.footer__contacts{
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+  }
+  
+.footer__contacts .footer__contacts__d{
+    list-style: none;
+  }
+  
+.footer__contacts .footer__contacts__d a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 10px 35px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+.footer__contacts .footer__contacts__d a i{
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+
+.footer__contacts .footer__contacts__d a:hover i{
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+.footer__contacts__d a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+.footer__contacts .footer__contacts__d a:hover:before {
+    top: 0;
+  }
+  
+.footer__contacts .footer__contacts__d:nth-child(1) a:before{
+    background: #4267B2;
+  }
+  
+.footer__contacts .footer__contacts__d:nth-child(2) a:before{
+    background: #1DA1F2;
+  }
+  
+.footer__contacts .footer__contacts__d:nth-child(3) a:before {
+    background: linear-gradient(to right top,#FCAF45,#C13584 50%,#5851D8);
+  }
+  
+.footer__contacts .footer__contacts__d:nth-child(4) a:before {
+    background: #FF4500;
+  }
+
+.footer__contacts .footer__contacts__d:nth-child(5) a:before {
+    background: #25D366;
 }
