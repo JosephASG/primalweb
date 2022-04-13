@@ -61,12 +61,6 @@
             position:relative;          
         }
 
-        @media screen and (max-height: 636px){
-            .mouse__scroll__section{
-                top:0;
-            }
-        }
-
         .mouse__scroll{
             cursor: pointer;
             position: relative;
@@ -126,6 +120,11 @@
             to{
                 top: 65%;
                 opacity: .2;
+            }
+        }
+        @media (max-height: 636px){
+            .mouse__scroll__section{
+                top:0;
             }
         }
     </style>
