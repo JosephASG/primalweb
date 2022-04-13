@@ -824,7 +824,7 @@ i.selected{
 
 /*----------------------------- mouse sense ---------------------------------*/
 
-.__container_mouse{
+/*.__container_mouse{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -873,7 +873,7 @@ i.selected{
     transition: 0s;
     transform: scale(1);
 }
-
+*/
 /*----------------------------------------------------- mouse trail --------------------------------*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -896,7 +896,7 @@ i.selected{
         font-size: 3.7rem;
     }
 }
- .ball {
+ /*.ball {
 	 pointer-events: none;
 	 position: absolute;
 	 width: 10px;
@@ -911,7 +911,7 @@ i.selected{
 	 100% {
 		 transform: scale(0);
 	}
-}
+}*/
 
 /*---------------------------------------------------------------*/
 
@@ -1399,3 +1399,6 @@ i.selected{
 .footer__contacts .footer__contacts__d:nth-child(5) a:before {
     background: #25D366;
 }
+
+/*----------------------------------------------------------mouse scroll animation-----------------------------------*/
+

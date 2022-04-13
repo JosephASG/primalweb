@@ -51,6 +51,86 @@
 
     </style>
 
+    <style>
+        .mouse__scroll__section{
+            position: fixed;
+            top: 15%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position:relative;          
+        }
+
+        @media screen and (max-height: 636px){
+            .mouse__scroll__section{
+                top:0;
+            }
+        }
+
+        .mouse__scroll{
+            cursor: pointer;
+            position: relative;
+            height: 80px;
+            width: 50px;
+            border: 2px solid #fff;
+            border-radius: 30px;
+        }
+
+        .mouse__scroll::before{
+            position: absolute;
+            content: '';
+            height: 14px;
+            width: 8px;
+            border-radius: 50%;
+            background: #fff;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 500ms;
+            animation: movescroll 2.5s infinite linear;
+        }
+
+        .mouse__scroll:hover:before{
+            background: none;
+            position: absolute;
+            color: #fff;
+            width:10px;
+            height: 10px;
+            border-radius: 0;
+            background-size: 30px;
+            border-top: solid 5px;
+            border-right: solid 5px;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(135deg);
+            transition: 300ms;
+            animation: move_arrow 1s infinite linear;
+        }  
+
+        @keyframes move_arrow{
+            from{
+                top: 10px;
+                opacity: 1;
+            }
+            to{
+                top: 65%;
+                opacity: .2;
+            }
+        }
+
+        @keyframes movescroll{
+            from{
+                top: 10px;
+                opacity: 1;
+            }
+            to{
+                top: 65%;
+                opacity: .2;
+            }
+        }
+    </style>
+
+
     <!-- SCROLL REVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -133,6 +213,12 @@
                 </ul>
         </div>
     </section>
+
+<!------------------------------------------------------------mouse scroll animation------------------------------------------------------>
+
+    <!--<section>
+        <div class="mouse__scroll"></div>
+    </section>-->
 
 <!------------------------------------------------------------Menu categorias--------------------------------------------------------------------->     
 
@@ -254,7 +340,7 @@
             </div>
         </div>
 
-        <div id="wrap">
+        <div>
         <footer class="" id="contact">
             <div class="py-5">
                 <img src="{% static 'img/LogoToAnimateWhite.png' %}" alt="" class="logoPrimal">
@@ -301,11 +387,11 @@
             </div>
           </footer>
         </div>
-        <div class="go__top__container">
+        <!--<div class="go__top__container">
             <div class="go__top__btn">
                 <i class="fas fa-chevron-up"></i>
             </div>
-        </div> 
+        </div>--> 
     
     <script type="text/javascript" src="{% static 'js/index.js' %}"></script>  
     <script  type="module" src="{% static 'js/firebase-primal.js' %}"></script> 
@@ -324,8 +410,8 @@
 
     <script> 
         var typed = new Typed(".auto_type", {
-            strings : ["Software Development Apprentice",
-                        "Descubre el fuego que hay en ti."],
+            strings : ["Software", "Development", "Apprentice"
+                        ],
                         typeSpeed: 50,
                         backSpeed: 50,
                         loop: true
@@ -395,7 +481,7 @@
         });*/
     </script>
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
          document.addEventListener("mousemove", parallax);
         function parallax(e){
            this.querySelectorAll(".layer").forEach(layer => {
@@ -407,7 +493,7 @@
                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
            })
         }
-    </script>
+    </script>-->
         
     <!--<script>
         const root = document.querySelector(".container__hex");
@@ -438,7 +524,7 @@
         }
     </script>
 
-    <script>
+    <!--<script>
         $(document).ready(function(){
   
             var mousePos = {};
@@ -477,7 +563,7 @@
             }, 1);
             });
 
-    </script>
+    </script>-->
 
     <script>
         const position__ = document.documentElement;
