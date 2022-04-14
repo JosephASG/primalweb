@@ -25,7 +25,8 @@
 
 .raiseLogo:focus,
 .raiseLogo:hover{
-    transform: scale(1.15) translateZ(0px);
+    transform: scale(1.15);
+    transition: all .3s ease;
 }
 
 
