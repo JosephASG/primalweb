@@ -95,17 +95,6 @@ containerDescargas{
     font-size: 3.7rem;
 }
 
-.botonapps{
-
-    text-align:center;
-    text-transform:uppercase;
-    background-color:transparent;
-    text-decoration:none;
-    font-family:'GT Sectra Display Medium',serif;
-    font-weight:900;
-    font-size:17px;
-    letter-spacing:.045em
-}
 .botonapps svg rect{
     stroke:#EC0033;
     stroke-width:4;

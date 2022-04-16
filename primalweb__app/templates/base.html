@@ -8,7 +8,18 @@
     <link rel="icon" href="{% static 'img/PrimalLogoPro.png' %}">
     
     <!-- Estilo de los botones-->
-    <link rel="stylesheet" href="{% static 'css/openclosemenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/glitch.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sticky_section.css' %}">
+    <link rel="stylesheet" href="{% static 'css/background__circles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skills.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jarallax.css' %}">
+    <link rel="stylesheet" href="{% static 'css/3D_cards.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/parrallax_scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mouse_scroll_anim.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer_social_icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card_testimonial.css' %}">
     <link rel="stylesheet" href="{% static 'css/wordRGBA.css' %}">
     <link rel="stylesheet" href="{% static 'css/animaciones.css' %}">
     <link rel="stylesheet" href="{% static 'css/icontranslate.css' %}">
@@ -20,25 +31,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/26b28607c6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--<style>
-        /* Set the border color */
-          
-        .custom-toggler.navbar-toggler {
-            border-color: white;
-        }
-        /* Setting the stroke to green using rgb values (0, 128, 0) */
-          
-        .custom-toggler .navbar-toggler-icon {
-            background-image: url(
-                "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-        }
-
-        
-    </style>-->
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
+       
         .containerX{
         font-size: 5rem;
         opacity: 1;
@@ -52,86 +48,6 @@
 
     </style>
 
-    <style>
-        .mouse__scroll__section{
-            position: fixed;
-            top: 15%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;  
-            position:relative;          
-        }
-
-        .mouse__scroll{
-            cursor: pointer;
-            position: relative;
-            height: 80px;
-            width: 50px;
-            border: 2px solid #fff;
-            border-radius: 30px;
-        }
-
-        .mouse__scroll::before{
-            position: absolute;
-            content: '';
-            height: 14px;
-            width: 8px;
-            border-radius: 50%;
-            background: #fff;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: 500ms;
-            animation: movescroll 2.5s infinite linear;
-        }
-
-        .mouse__scroll:hover:before{
-            background: none;
-            position: absolute;
-            color: #fff;
-            width:10px;
-            height: 10px;
-            border-radius: 0;
-            background-size: 30px;
-            border-top: solid 5px;
-            border-right: solid 5px;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%) rotate(135deg);
-            transition: 300ms;
-            animation: move_arrow 1s infinite linear;
-        }  
-
-        @keyframes move_arrow{
-            from{
-                top: 10px;
-                opacity: 1;
-            }
-            to{
-                top: 65%;
-                opacity: .2;
-            }
-        }
-
-        @keyframes movescroll{
-            from{
-                top: 10px;
-                opacity: 1;
-            }
-            to{
-                top: 65%;
-                opacity: .2;
-            }
-        }
-        @media (max-height: 720px){
-            .mouse__scroll__section{
-                top:0;
-            }
-        }
-    </style>
-
-
     <!-- SCROLL REVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -140,7 +56,7 @@
     
 </head>
 
-<body>
+<body class="colorBlackP">
 <!------------------------------------------------------------Menu seleccion--------------------------------------------------------------------->     
 
     <section onclick="toggleMenu__();">
@@ -148,17 +64,17 @@
     <div class="sidebar__">
         <ul class="sidebar__menu">
             <li style="--clr:#ff0029">
-                <a data-text="&nbsp;home" href="{% url 'home' %}">
+                <a data-text="&nbsp;home" href="{% url 'home' %}" class="font__Josefin">
                     &nbsp;Home&nbsp;
                 </a>
             </li>
             <li style="--clr:#ff0019">
-                <a data-text="&nbsp;skills" class="btn_open_skills" onclick="toggleMenu__skills();">
+                <a data-text="&nbsp;skills" href="#skills" class="btn_open_skills font__Josefin" onclick="toggleMenu__skills();">
                     &nbsp;Skills&nbsp;
                 </a>
             </li>
             <li style="--clr:#ff0009">
-                <a data-text="&nbsp;proyectos"  href="{% url 'descargas' %}">
+                <a data-text="&nbsp;proyectos"  href="{% url 'descargas' %}" class="font__Josefin">
                     &nbsp;Proyectos&nbsp;
                 </a>
             </li>
@@ -167,29 +83,30 @@
                     &nbsp;Categorias&nbsp;
                 </a>
             </li>-->
-            <li style="--clr:#dd1818">
+            <!--<li style="--clr:#dd1818">
                 <a data-text="&nbsp;testimonio"  href="#testimonio">
                     &nbsp;Testimonio&nbsp;
                 </a>
-            </li>
+            </li>-->
             <!--<li class="button type2" tabindex="1">
                 <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none;">
                     <span class="">Buscar</span>
                 </a>
             </li>-->
             <li style="--clr:#D31027">
-                <a data-text="&nbsp;contacto" href="#contact">
+                <a data-text="&nbsp;contacto" href="#contact" class="font__Josefin">
                     &nbsp;Contacto&nbsp;
                 </a>
             </li>
-            <!--<li style="--clr:#dd1818">
-                <a data-text="&nbsp;About"  href="#about">
+            <li style="--clr:#dd1818">
+                <a data-text="&nbsp;About"  href="#about" class="font__Josefin">
                     &nbsp;About&nbsp;
                 </a>
-            </li>--->
+            </li>
         </ul>
     </div>
     </section>
+    
     
 <!------------------------------------------------------------Pantalla de carga de inicio--------------------------------------------------------------------->     
 
@@ -207,7 +124,7 @@
 
 <!------------------------------------------------------------Tarjeta de habilidades--------------------------------------------------------------------->     
 
-    <section > 
+    <!--<section > 
         <div class="skills_container_card" id="skills_container_menu">
             <div class="toggle__skills __card__skils__x" onclick="toggleMenu__skills();"></div> 
 
@@ -222,7 +139,7 @@
                     <li class="__card__skils"><a href="">Java</a></li>
                 </ul>
         </div>
-    </section>
+    </section>-->
 
 <!------------------------------------------------------------mouse scroll animation------------------------------------------------------>
 
@@ -232,7 +149,7 @@
 
 <!------------------------------------------------------------Menu categorias--------------------------------------------------------------------->     
 
-        <div class="menu__side" id="menu_side">
+        <!--<div class="menu__side" id="menu_side">
             <div class="burger__menu" id="btn_open_i">
                 <i class="fa-solid fa-xmark"></i>
             </div>
@@ -266,7 +183,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div>-->
 <!--------------------------------------------------------Navbar ------------------------------------------------------------------------->
     
         <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top" style="z-index: 2;"> 
@@ -277,6 +194,9 @@
                         <h5 class="d-inline-block">
                             <div class="text-light rounded-0 ms-2 title__style__LS">Primal</div> 
                         </h5> 
+                        <h6 class="d-inline-block">
+                            <span class="badge text-dark ms-2" title="Beta basicamente quiere decir que este sitio se caerá, y muchisimo. ademas que estara algo lento probablemente algunas veces" style="border-radius: 10px; background: #ffcc74;">Beta</span>
+                        </h6>
                     </div>                 
                 </a>
             </div>
@@ -351,7 +271,7 @@
         </div>
 
         <div>
-        <footer class="" id="contact">
+        <footer class="colorBlackP" id="contact" data-jarallax-element="-200 0"> 
             <div class="py-5">
                 <img src="{% static 'img/LogoToAnimateWhite.png' %}" alt="" class="logoPrimal">
             </div>
@@ -384,14 +304,14 @@
             </div>    
             <nav id="nav__footer" class="container border-bottom py-3 mb-3">   
                 <a href="#">Home</a>
-                <a onclick="toggleMenu__skills();">Skills</a>
+                <a href="#skills" onclick="toggleMenu__skills();">Skills</a>
                 <a>Contacto</a>
-                <a>Acerca de</a>
+                <a href="#about">Acerca de</a>
             </nav>
             <div>
                 <div class="container">
                     <div class="row py-4">
-                        <p class="text-center text-muted mt-0">© 2022 Primal, Inc</p>
+                        <p class="text-center text-muted mt-0 section__skills">© 2022 Primal, Inc</p>
                     </div>
                 </div>
             </div>
@@ -410,20 +330,49 @@
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/btn_up.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jarallax.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jarallax-element.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vanilla-tilt.js' %}"></script>
     <script type="application/javascript" src="{% static 'js/progressloader.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <div class="progress" style="height: 3px;" id="preloaderbar">
+
+    <!--<div class="progress" style="height: 3px;" id="preloaderbar">
         <div class="preloader" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
+    </div>-->
+
+    
+
+    <script>
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5,
+        });
+    </script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".skill__box"),{
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+	    });
+    </script>
+        
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) =>{
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        })
+    </script>
 
     <script> 
         var typed = new Typed(".auto_type", {
             strings : ["Software", "Development", "Apprentice"
                         ],
-                        typeSpeed: 50,
-                        backSpeed: 50,
+                        typeSpeed: 60,
+                        backSpeed: 60,
                         loop: true
         })
     </script>
@@ -461,7 +410,7 @@
             origin: 'bottom',   
             distance: '300px'
         });
-        sr.reveal('#text__1', {
+        /*sr.reveal('#text__1', {
             duration: 2000, 
             origin: 'top',
             distance: '300px'
@@ -471,49 +420,13 @@
             origin: 'bottom',   
             distance: '300px'
         });
-        sr.reveal('#testimonio', {
+        sr.reveal('#test', {
             duration: 2000, 
             origin: 'right',   
             distance: '300px',
             viewFactor: 0.2
-        });
-
-        // SMOOTH SCROLLING
-
-        /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
         });*/
     </script>
-
-    <!--<script type="text/javascript">
-         document.addEventListener("mousemove", parallax);
-        function parallax(e){
-           this.querySelectorAll(".layer").forEach(layer => {
-               const speed = layer.getAttribute("data-speed")
-
-               const x = (window.innerWidth - e.pageX*speed)/100
-               const y = (window.innerHeight - e.pageY*speed)/100
-
-               layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-           })
-        }
-    </script>-->
-        
-    <!--<script>
-        const root = document.querySelector(".container__hex");
-        const bg = document.querySelector(".bacg");
-
-        root.addEventListener("mousemove", function(e){
-            bg.style.left = `${e.clientX}px`;
-            bg.style.top = `${e.clientY}px`;
-        });
-    </script>-->
 
     <script>
         function toggleMenu__(){
@@ -574,16 +487,17 @@
             });
 
     </script>-->
-    <script>
+    <!--<script>
         document.querySelector('.hamburger').addEventListener('click', (e) => {
 	        e.currentTarget.classList.toggle('is-active');
         })
-    </script>
+    </script>-->
 
     <script>
         const position__ = document.documentElement;
         position__.addEventListener("mousemove", e => {
             position__.style.setProperty("--x", e.clientX + "px")
+            position__.style.setProperty("--y", e.clientY + "px")
         })
     </script>
 

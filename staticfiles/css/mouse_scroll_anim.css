@@ -1,0 +1,71 @@
+.mouse__scroll__section{
+    position: fixed;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    position:relative;          
+}
+
+.mouse__scroll{
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.mouse__scroll::before{
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 8px;
+    border-radius: 50%;
+    background: #fff;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 500ms;
+    animation: movescroll 2.5s infinite linear;
+}
+
+.mouse__scroll:hover:before{
+    background: none;
+    position: absolute;
+    color: #fff;
+    width:10px;
+    height: 10px;
+    border-radius: 0;
+    background-size: 30px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
+    transition: 300ms;
+    animation: move_arrow 1s infinite linear;
+}  
+
+@keyframes move_arrow{
+    from{
+        top: 10px;
+        opacity: 1;
+    }
+    to{
+        top: 65%;
+        opacity: .2;
+    }
+}
+
+@keyframes movescroll{
+    from{
+        top: 10px;
+        opacity: 1;
+    }
+    to{
+        top: 65%;
+        opacity: .2;
+    }
+}
