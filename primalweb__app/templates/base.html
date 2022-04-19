@@ -1,51 +1,40 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{% static 'img/PrimalLogoPro.png' %}">
-    
+
     <!-- Estilo de los botones-->
     <link rel="stylesheet" href="{% static 'css/glitch.css' %}">
     <link rel="stylesheet" href="{% static 'css/sticky_section.css' %}">
-    <link rel="stylesheet" href="{% static 'css/background__circles.css' %}">
     <link rel="stylesheet" href="{% static 'css/skills.css' %}">
     <link rel="stylesheet" href="{% static 'css/jarallax.css' %}">
-    <link rel="stylesheet" href="{% static 'css/3D_cards.css' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    <link rel="stylesheet" href="{% static 'css/parrallax_scroll.css' %}">
-    <link rel="stylesheet" href="{% static 'css/mouse_scroll_anim.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer_social_icons.css' %}">
-    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
-    <link rel="stylesheet" href="{% static 'css/card_testimonial.css' %}">
-    <link rel="stylesheet" href="{% static 'css/wordRGBA.css' %}">
     <link rel="stylesheet" href="{% static 'css/animaciones.css' %}">
-    <link rel="stylesheet" href="{% static 'css/icontranslate.css' %}">
-    <link rel="stylesheet" href="{% static 'css/styleButtons.css' %}">
     <link rel="stylesheet" href="{% static 'css/preloadera.css' %}">
     <link rel="stylesheet" href="{% static 'css/colors.css' %}">
-    <link rel="stylesheet" href="{% static 'css/scrollbar.css' %}">
-    <link rel="stylesheet" href="{% static 'css/progressBar.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/26b28607c6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-       
-        .containerX{
-        font-size: 5rem;
-        opacity: 1;
-        transform: none;}
-
-        @media (min-width:460px){
-            .containerX{
-                font-size:xx-large;
-            }
+        .containerX {
+            font-size: 5rem;
+            opacity: 1;
+            transform: none;
         }
 
+        @media (min-width:460px) {
+            .containerX {
+                font-size: xx-large;
+            }
+        }
     </style>
 
     <!-- SCROLL REVEAL-->
@@ -53,225 +42,116 @@
 
 
     <title>Primal</title>
-    
+
 </head>
 
 <body class="colorBlackP">
-<!------------------------------------------------------------Menu seleccion--------------------------------------------------------------------->     
+
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+
+    <!------------------------------------------------------------Menu seleccion--------------------------------------------------------------------->
 
     <section onclick="toggleMenu__();">
-        <div class="toggle__"></div>
-    <div class="sidebar__">
-        <ul class="sidebar__menu">
-            <li style="--clr:#ff0029">
-                <a data-text="&nbsp;home" href="{% url 'home' %}" class="font__Josefin">
-                    &nbsp;Home&nbsp;
-                </a>
-            </li>
-            <li style="--clr:#ff0019">
-                <a data-text="&nbsp;skills" href="#skills" class="btn_open_skills font__Josefin" onclick="toggleMenu__skills();">
-                    &nbsp;Skills&nbsp;
-                </a>
-            </li>
-            <li style="--clr:#ff0009">
-                <a data-text="&nbsp;proyectos"  href="{% url 'descargas' %}" class="font__Josefin">
-                    &nbsp;Proyectos&nbsp;
-                </a>
-            </li>
-            <!--<li style="--clr:#dd1818">
-                <a data-text="&nbsp;categorias"  id="btn_open" style="cursor: pointer;">
-                    &nbsp;Categorias&nbsp;
-                </a>
-            </li>-->
-            <!--<li style="--clr:#dd1818">
-                <a data-text="&nbsp;testimonio"  href="#testimonio">
-                    &nbsp;Testimonio&nbsp;
-                </a>
-            </li>-->
-            <!--<li class="button type2" tabindex="1">
-                <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none;">
-                    <span class="">Buscar</span>
-                </a>
-            </li>-->
-            <li style="--clr:#D31027">
-                <a data-text="&nbsp;contacto" href="#contact" class="font__Josefin">
-                    &nbsp;Contacto&nbsp;
-                </a>
-            </li>
-            <li style="--clr:#dd1818">
-                <a data-text="&nbsp;About"  href="#about" class="font__Josefin">
-                    &nbsp;About&nbsp;
-                </a>
-            </li>
-        </ul>
-    </div>
+        <div class="toggle__" style="margin-top: 40px;right: 40px;"></div>
+        <div class="sidebar__">
+            <ul class="sidebar__menu">
+                <li style="--clr:#ff0029">
+                    <a data-text="&nbsp;home" href="{% url 'home' %}" class="font__Josefin">
+                        &nbsp;Home&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#ff0019">
+                    <a data-text="&nbsp;skills" href="#skills" class="btn_open_skills font__Josefin"
+                        onclick="toggleMenu__skills();">
+                        &nbsp;Skills&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#ff0009">
+                    <a data-text="&nbsp;proyectos" href="{% url 'descargas' %}" class="font__Josefin">
+                        &nbsp;Proyectos&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#D31027">
+                    <a data-text="&nbsp;contacto" href="#contact" class="font__Josefin">
+                        &nbsp;Contacto&nbsp;
+                    </a>
+                </li>
+                <li style="--clr:#dd1818">
+                    <a data-text="&nbsp;About" href="#about" class="font__Josefin">
+                        &nbsp;About&nbsp;
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
-    
-    
-<!------------------------------------------------------------Pantalla de carga de inicio--------------------------------------------------------------------->     
+    <!------------------------------------------------------------Pantalla de carga de inicio--------------------------------------------------------------------->
 
-        <div class="loader-wrapper">
+    <div class="loader-wrapper">
         <div class="loader2" style="border-top-color: rgba(149, 144, 144, 0.46);"></div>
-        
+
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-        
-      </div>
-      <!--<div class="contenedor_loader">
+
+    </div>
+    <!--<div class="contenedor_loader">
         <div class="loader"></div>
         
       </div>-->
 
-<!------------------------------------------------------------Tarjeta de habilidades--------------------------------------------------------------------->     
+    <!--------------------------------------------------------Navbar ------------------------------------------------------------------------->
 
-    <!--<section > 
-        <div class="skills_container_card" id="skills_container_menu">
-            <div class="toggle__skills __card__skils__x" onclick="toggleMenu__skills();"></div> 
-
-                <ul class="">
-                    <li class="__card__skils"> <a href="">Python</a> </li>
-                    <li class="__card__skils"><a href="">C#</a></li>
-                    <li class="__card__skils"><a href="">C++</a></li>
-                    <li class="__card__skils"><a href="">Html</a></li>
-                    <li class="__card__skils"><a href="">Css</a></li>
-                    <li class="__card__skils"><a href="">JS</a></li>
-                    <li class="__card__skils"><a href="">React</a></li>
-                    <li class="__card__skils"><a href="">Java</a></li>
-                </ul>
-        </div>
-    </section>-->
-
-<!------------------------------------------------------------mouse scroll animation------------------------------------------------------>
-
-    <!--<section>
-        <div class="mouse__scroll"></div>
-    </section>-->
-
-<!------------------------------------------------------------Menu categorias--------------------------------------------------------------------->     
-
-        <!--<div class="menu__side" id="menu_side">
-            <div class="burger__menu" id="btn_open_i">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="header__menu selected">
-                <i class="fa-solid fa-computer" ></i> 
-                <h4>Categorías</h4>             
-            </div>
-            <div class="options__menu" >
-                <a href="#">
-                    <div class="option">
-                        <i class="fa-solid fa-computer" title="Aplicaciones de escritorio"></i>
-                        <h4>Aplicaciones de escritorio</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fa-solid fa-mobile-screen-button" title="Aplicaciones mobiles"></i>
-                        <h4>Aplicaciones mobiles</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fa-brands fa-android" title="Android"></i>
-                        <h4>Android</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fa-brands fa-app-store" title="iOS"></i>
-                        <h4>iOS</h4>
-                    </div>
-                </a>
-            </div>
-        </div>-->
-<!--------------------------------------------------------Navbar ------------------------------------------------------------------------->
-    
-        <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top" style="z-index: 2;"> 
-            <div class="container px-4">
-                <a class="navbar-brand" href="{% url 'home' %}">
-                    <div class="col-sm-6">
-                        <img class="logo__hover" src="{% static 'img/PrimalLogoLight48x48.png' %}" alt="Primal Logo">
-                        <h5 class="d-inline-block">
-                            <div class="text-light rounded-0 ms-2 title__style__LS">Primal</div> 
-                        </h5> 
-                        <h6 class="d-inline-block">
-                            <span class="badge text-dark ms-2" title="Beta basicamente quiere decir que este sitio se caerá, y muchisimo. ademas que estara algo lento probablemente algunas veces" style="border-radius: 10px; background: #ffcc74;">Beta</span>
-                        </h6>
-                    </div>                 
-                </a>
-            </div>
-                <!--<button class="navbar-toggler bar__menu" data-bs-toggle="collapse" data-bs-target="#menuNav" style="border: none; outline: none;">
-                    <span class="line1__bars-menu"></span>
-                    <span class="line2__bars-menu"></span>
-                    <span class="line3__bars-menu"></span>
-                </button>
-                    
-                <div id="menuNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto d-flex flex-col">
-                        <li class="nav-item boton button type2" tabindex="1">
-                            <a class="btn text-white d-flex " href="{% url 'descargas' %}">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M 200 50 L 200 200 L 100 200 L 300 400 L 500 200 L 400 200 L 400 50 L 200 50 M 500 500 L 100 500 L 100 550 L 500 550 L 500 500 "></path>
-                                </svg>
-                                <span class="ms-5 fw-bold d-sm-block ">Descargas</span>
-                            </a>
-                        </li>
-                        <li class="nav-item boton button type2" tabindex="1">
-                            <a class="btn text-white d-flex " id="btn_open">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path>
-                                </svg>
-                                <span class="ms-5 fw-bold d-sm-block boton">Categorias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item boton button type2" tabindex="1">
-                            <button type="button" class="btn text-white d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none;">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>                     
-                                </svg>
-                                <span class="ms-5 fw-bold d-sm-block boton">Buscar</span>
-                            </button>
-                        </li>
-                        <li class="nav-item boton button type2" tabindex="1">
-                            <a class="btn text-white d-flex" href="#contact">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
-                                </svg>
-                                <span class="ms-5 fw-bold d-sm-block ">contacto</span>
-                            </a>
-                        </li>
-                    </ul>
+    <nav id="navbar_move" class="navbar navbar-expand-lg fixed-top" style="z-index: 4;">
+        <div class="container px-4">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <div class="col-sm-6">
+                    <img class="logo__hover" src="{% static 'img/PrimalLogoLight48x48.png' %}" alt="Primal Logo">
+                    <h5 class="d-inline-block">
+                        <div class="text-light rounded-0 ms-2 title__style__LS">Primal</div>
+                    </h5>
+                    <h6 class="d-inline-block">
+                        <span class="badge text-dark ms-2"
+                            title="Beta basicamente quiere decir que este sitio se caerá, y muchisimo. ademas que estara algo lento probablemente algunas veces"
+                            style="border-radius: 10px; background: #ffcc74;">Beta</span>
+                    </h6>
                 </div>
-            </div>-->
-        </nav>
-        
-        {% block content %}
+            </a>
+        </div>
+    </nav>
 
-        {% endblock %}
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-dark" style="border-radius: 10px;">
-                    <div class="modal-body">
-                        <div class="d-flex justify-content-between">
-                            <h2 class="h5 mb-2 fw-bold modal-title text-light" id="exampleModalLabel">Busca aplicaciones</h2>
-                            <button type="button" class="btn-close btn btn-warning btn-close-white text-reset shadow-none" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
-                        </div>  
-                        <div>
-                            <div class="d-flex flex-start mb-3">
-                            </div>
-                            <form class="d-flex mb-3">
-                                <input id="search" type="text" class="form-control p-2 text-center text-light border-0 shadow-none" placeholder="Buscar Contenido 🔍" autocomplete="false" required="" value="" style="background: rgb(48, 48, 48); border-radius: 10px;">
-                                <button class="btn btn-primary ms-2 d-flex align-items-center" style="border-radius: 10px;" type="submit" disabled="">Buscar</button>
-                            </form>
+    {% block content %}
+
+    {% endblock %}
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark" style="border-radius: 10px;">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="h5 mb-2 fw-bold modal-title text-light" id="exampleModalLabel">Busca aplicaciones
+                        </h2>
+                        <button type="button" class="btn-close btn btn-warning btn-close-white text-reset shadow-none"
+                            data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-start mb-3">
                         </div>
+                        <form class="d-flex mb-3">
+                            <input id="search" type="text"
+                                class="form-control p-2 text-center text-light border-0 shadow-none"
+                                placeholder="Buscar Contenido 🔍" autocomplete="false" required="" value=""
+                                style="background: rgb(48, 48, 48); border-radius: 10px;">
+                            <button class="btn btn-primary ms-2 d-flex align-items-center" style="border-radius: 10px;"
+                                type="submit" disabled="">Buscar</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div>
-        <footer class="colorBlackP" id="contact" data-jarallax-element="-200 0"> 
+    <div>
+        <footer class="colorBlackP" id="contact">
             <div class="py-5">
                 <img src="{% static 'img/LogoToAnimateWhite.png' %}" alt="" class="logoPrimal">
             </div>
@@ -293,7 +173,7 @@
                 </div>
                 <div class="footer__contacts__d">
                     <a class="">
-                    <i class="fa-brands fa-reddit"></i>
+                        <i class="fa-brands fa-reddit"></i>
                     </a>
                 </div>
                 <div class="footer__contacts__d">
@@ -301,8 +181,8 @@
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
-            </div>    
-            <nav id="nav__footer" class="container border-bottom py-3 mb-3">   
+            </div>
+            <nav id="nav__footer" class="container border-bottom py-3 mb-3">
                 <a href="#">Home</a>
                 <a href="#skills" onclick="toggleMenu__skills();">Skills</a>
                 <a>Contacto</a>
@@ -315,34 +195,28 @@
                     </div>
                 </div>
             </div>
-          </footer>
-        </div>
-        <!--<div class="go__top__container">
-            <div class="go__top__btn">
-                <i class="fas fa-chevron-up"></i>
-            </div>
-        </div>--> 
-    
-    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>  
-    <script  type="module" src="{% static 'js/firebase-primal.js' %}"></script> 
+        </footer>
+    </div>
+
+    <script type="module" src="{% static 'js/firebase-primal.js' %}"></script>
     <script type="application/javascript" src="{% static 'js/preloader.js' %}"></script>
-    <script type="application/javascript" src="{% static 'js/textWrite.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/btn_up.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/jarallax.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/jarallax-element.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/vanilla-tilt.js' %}"></script>
-    <script type="application/javascript" src="{% static 'js/progressloader.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
 
-    <!--<div class="progress" style="height: 3px;" id="preloaderbar">
-        <div class="preloader" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>-->
-
-    
+    <script>
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
 
     <script>
         jarallax(document.querySelectorAll('.jarallax'), {
@@ -351,85 +225,33 @@
     </script>
 
     <script>
-        VanillaTilt.init(document.querySelectorAll(".skill__box"),{
+        VanillaTilt.init(document.querySelectorAll(".skill__box"), {
             max: 25,
             speed: 400,
             glare: true,
             "max-glare": 1,
-	    });
+        });
     </script>
-        
+
     <script>
         const cursor = document.querySelector('.cursor');
-        document.addEventListener('mousemove', (e) =>{
+        document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.pageX + 'px';
             cursor.style.top = e.pageY + 'px';
         })
     </script>
 
-    <script> 
+    <script>
         var typed = new Typed(".auto_type", {
-            strings : ["Software", "Development", "Apprentice"
-                        ],
-                        typeSpeed: 60,
-                        backSpeed: 60,
-                        loop: true
+            strings: ["Software", "Development", "Apprentice"
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
         })
     </script>
-
     <script>
-        $(window).scroll(function(){
-            $('nav').toggleClass('scrolled',$(this).scrollTop()>50);
-        });
-    </script>
-
-    <script>
-        window.sr = ScrollReveal();
-        sr.reveal('#text__p__1', {
-            duration: 2000, 
-            origin: 'bottom',
-            distance: '300px'
-        });
-        sr.reveal('#text__p__2', {
-            duration: 2000, 
-            origin: 'top',
-            distance: '300px'   
-        });
-        sr.reveal('#text__p__3', {
-            duration: 2000, 
-            origin: 'bottom',
-            distance: '300px'
-        });
-        sr.reveal('#img__1', {
-            duration: 2000, 
-            origin: 'top',
-            distance: '300px'
-        });
-        sr.reveal('#img__2', {
-            duration: 2000, 
-            origin: 'bottom',   
-            distance: '300px'
-        });
-        /*sr.reveal('#text__1', {
-            duration: 2000, 
-            origin: 'top',
-            distance: '300px'
-        });
-        sr.reveal('#text__2', {
-            duration: 2000, 
-            origin: 'bottom',   
-            distance: '300px'
-        });
-        sr.reveal('#test', {
-            duration: 2000, 
-            origin: 'right',   
-            distance: '300px',
-            viewFactor: 0.2
-        });*/
-    </script>
-
-    <script>
-        function toggleMenu__(){
+        function toggleMenu__() {
             const menutoggle = document.querySelector(".toggle__");
             const sidebar__ = document.querySelector(".sidebar__");
             menutoggle.classList.toggle("active")
@@ -437,70 +259,56 @@
         }
     </script>
     <script>
-        function toggleMenu__skills(){
-            const menutoggle = document.querySelector(".toggle__skills");
-            const skills_container_card = document.querySelector(".skills_container_card");
-            const btn_open_skills = document.querySelector(".btn_open_skills");
-            btn_open_skills.classList.toggle("active")
-            menutoggle.classList.toggle("active")
-            skills_container_card.classList.toggle("active")
-        }
-    </script>
-
-    <!--<script>
-        $(document).ready(function(){
-  
-            var mousePos = {};
-
-            function getRandomInt(min, max) {
-            return Math.round(Math.random() * (max - min + 1)) + min;
-            }
-            
-            $(window).mousemove(function(e) {
-                mousePos.x = e.pageX;
-                mousePos.y = e.pageY;
-            });
-            
-            $(window).mouseleave(function(e) {
-                mousePos.x = -1;
-                mousePos.y = -1;
-            });
-            
-            var draw = setInterval(function(){
-                if(mousePos.x > 0 && mousePos.y > 0){
-                
-                var range = 15;
-                
-                var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,0)+","+getRandomInt(0,41)+");";
-                
-                var sizeInt = getRandomInt(10, 30);
-                size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
-                
-                var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
-                
-                var top = "top: " + getRandomInt(mousePos.y-range-sizeInt, mousePos.y+range) + "px;"; 
-
-                var style = left+top+color+size;
-                $("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){$(this).remove();}); 
-                }
-            }, 1);
-            });
-
-    </script>-->
-    <!--<script>
-        document.querySelector('.hamburger').addEventListener('click', (e) => {
-	        e.currentTarget.classList.toggle('is-active');
-        })
-    </script>-->
-
-    <script>
         const position__ = document.documentElement;
         position__.addEventListener("mousemove", e => {
             position__.style.setProperty("--x", e.clientX + "px")
             position__.style.setProperty("--y", e.clientY + "px")
         })
     </script>
+    <script>
+        function animateFrom(elem, direction) {
+  direction = direction || 1;
+  var x = 0,
+      y = direction * 100;
+  if(elem.classList.contains("gs_reveal_fromLeft")) {
+    x = -100;
+    y = 0;
+  } else if (elem.classList.contains("gs_reveal_fromRight")) {
+    x = 100;
+    y = 0;
+  }
+  elem.style.transform = "translate(" + x + "px, " + y + "px)";
+  elem.style.opacity = "0";
+  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    duration: 1.25, 
+    x: 0,
+    y: 0, 
+    autoAlpha: 1, 
+    ease: "expo", 
+    overwrite: "auto"
+  });
+}
 
+function hide(elem) {
+  gsap.set(elem, {autoAlpha: 0});
+}
 
-    </body>
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+    hide(elem); // assure that the element is hidden when scrolled into view
+    
+    ScrollTrigger.create({
+      trigger: elem,
+      onEnter: function() { animateFrom(elem) }, 
+      onEnterBack: function() { animateFrom(elem, -1) },
+      onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+    });
+  });
+});
+
+    </script>
+</body>
+
 </html>
